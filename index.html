@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<link href=”styles.css” type="text/css" rel="stylesheet"/>
+		<script src="petrolpump.js"></script>
+		<style>
+		table, th, tr, td {
+			border: 1px solid black;
+		}
+		</style>
+	</head>
+	<body>
+		<h1>Peter's Petrol Pump<h1>
+	
+
+		<p>Cost of Petrol: 1.45<p>
+		<p>Cost of Diesel: 1.67<p>
+
+		<p>Litres</p>
+		<input type="number" id="petrolCounter" value="0.00" disabled>
+		
+		<p>Price</p>
+		<input type="number" id="petrolCostCounter" value="0.00" disabled>
+		
+		<div>
+			<button id="holdPetrol" onclick="dismountPetrolPump()">Hold petrol pump</button>
+			<button id="holdDiesel" onclick="dismountDieselPump()">Hold diesel pump</button>
+			<button id="startPump" onclick="startPump()" disabled>Start </button>
+			<button id="stopPump" onclick="stopPump()"disabled>Stop</button>
+			<button id="pay" onclick="putDownAndPay()" disabled>Put back and pay</button>
+		</div>
+		<div>
+			<p>List of payments</p>
+			
+			<Table id="paymentTable">
+				<tr>
+					<th>Payment Time</th>
+					<th>Fuel type</th>
+					<th>Litres</th>
+					<th>Fuel Cost</th>
+					<th>Price</th>
+				<tr>			
+			</Table>
+		</div>	
+	</body>
+</html>
